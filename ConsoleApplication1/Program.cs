@@ -6,6 +6,11 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            var x = BitCalculation.Abs(1);
+
+            x = BitCalculation.Abs(-1);
+
+
             Console.WriteLine("It's a test really");
 
             Console.ReadLine();
