@@ -44,7 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BitCalculation.cs" />
+    <Compile Include="FileService.cs" />
+    <Compile Include="JoinDemonstration.cs" />
+    <Compile Include="MaximizingXor.cs" />
+    <Compile Include="Operators.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Program1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -26,6 +26,19 @@ So for positives we perform an XOR with 0 and a subtraction of 0 and thus get th
          *  
          *  
          */
+        public static void PrintOperator()
+        {
+            var a = 1 ^ 2; // XOR
+            var b = ~(1 ^ 2);   // XNOR
+
+            Console.WriteLine("1 XOR 2 is {0:x}", 1 ^ 2);
+            Console.WriteLine("1 XNOR 2 is {0:x}", ~(1 ^ 2));
+
+
+            Console.WriteLine("-1: 0x{0:x}", -1);
+            Console.WriteLine("3: 0x{0:x}", 3);
+            Console.WriteLine("3: 0x{0:x}", 1 ^ 2);
+        }
 
 
         public static int Abs(int num)
