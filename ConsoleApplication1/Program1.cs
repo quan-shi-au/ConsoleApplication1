@@ -12,17 +12,17 @@ using System.Text.RegularExpressions;
 using System.Text;
 using System;
 
-class Solution
+class Program1
 {
 
     // Complete the hourglassSum function below.
-    static int hourglassSum(int[][] arr)
+    static int hourglassSum1(int[][] arr)
     {
         return 1;
 
     }
 
-    static void Main1(string[] args)
+    static void Main2(string[] args)
     {
         TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
@@ -33,7 +33,7 @@ class Solution
             arr[i] = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
         }
 
-        int result = hourglassSum(arr);
+        int result = hourglassSum1(arr);
 
         textWriter.WriteLine(result);
 

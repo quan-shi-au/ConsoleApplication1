@@ -12,41 +12,69 @@ using System.Text.RegularExpressions;
 using System.Text;
 using System;
 
-
-
-class Result
+class Solution1
 {
 
-    /*
-     * Complete the 'oddNumbers' function below.
-     *
-     * The function is expected to return an INTEGER_ARRAY.
-     * The function accepts following parameters:
-     *  1. INTEGER l
-     *  2. INTEGER r
-     */
-
-    public static List<int> oddNumbers(int l, int r)
+    static bool IsMatching(char? openChar, char? closeChar)
     {
-        var result = new List<int>();
-
-        for (int i = l; i <= r; i++)
+        var matchingPairs = new Dictionary<char?, char?>()
         {
-            if (i % 2 != 0)
-                result.Add(i);
+            {'[', ']' },
+            {'{', '}' },
+            {'(', ')' },
+        };
 
+        if (!matchingPairs.ContainsKey(openChar))
+            return false;
+
+        return matchingPairs[openChar] == closeChar;
+    }
+
+    static string IsSyntaxCorrect(string input)
+    {
+        Stack st = new Stack();
+
+        foreach (var item in input)
+        {
+            if (st.Count == 0)
+            {
+                st.Push(item);
+                continue;
+            }
+
+            var topone = st.Peek() as char?;
+            if (IsMatching(topone, item))
+                st.Pop();
+            else
+                st.Push(item);
+        }
+
+        return st.Count == 0 ? "YES" : "NO";
+
+    }
+
+    // Complete the correctness function below.
+    static List<string> correctness(List<string> roktx)
+    {
+        var result = new List<string>();
+
+        foreach (var oneInput in roktx)
+        {
+            result.Add(IsSyntaxCorrect(oneInput));
         }
 
         return result;
 
-
-
     }
 
-    static void Main1()
+    static void Main1(string[] args)
     {
-        oddNumbers(2, 5);
-        }
+        var x = new List<string>();
+        x.Add("[]{}()");
+        x.Add("[{]}");
 
+
+        List<string> res = correctness(x);
+
+    }
 }
-
