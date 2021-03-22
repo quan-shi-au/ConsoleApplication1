@@ -11,9 +11,23 @@ using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 using System.Text;
 using System;
+using AlgorithmConsole1;
 
 class Solution1
 {
+
+    static void Main(string[] args)
+    {
+        var input = new int[] { 1, 3, 2, 4, 0, 77, 5, 122 };
+        //var input = new int[] { 3, 5, 2};
+
+        QuickSort.PivotSort(input, 0, input.Length - 1);
+
+        input.WriteOutput();
+
+        Console.ReadLine();
+
+    }
 
     static bool IsMatching(char? openChar, char? closeChar)
     {

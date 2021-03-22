@@ -54,7 +54,7 @@ class Solutionx
         return groups.Count();
     }
 
-    static void Main(string[] args)
+    static void Main1(string[] args)
     {
 
         List<string> greatBarrierReef = new List<string>();

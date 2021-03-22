@@ -48,8 +48,10 @@
     <Compile Include="BitCalculation.cs" />
     <Compile Include="BreadthFirstTraversal1.cs" />
     <Compile Include="BreadthFirstTraversal.cs" />
+    <Compile Include="BubbleSort.cs" />
     <Compile Include="DepthFirstSearch1.cs" />
     <Compile Include="DynamicProgramming1.cs" />
+    <Compile Include="ExtensionClass.cs" />
     <Compile Include="FileService.cs" />
     <Compile Include="Fish.cs" />
     <Compile Include="GraphDijkstra.cs" />
@@ -63,6 +65,7 @@
     <Compile Include="Program1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queue1.cs" />
+    <Compile Include="QuickSort.cs" />
     <Compile Include="QuickSort1.cs" />
     <Compile Include="RoktCoupons.cs" />
     <Compile Include="Sort1.cs" />
