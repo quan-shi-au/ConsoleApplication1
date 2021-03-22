@@ -16,7 +16,7 @@ using AlgorithmConsole1;
 class Solution1
 {
 
-    static void Main(string[] args)
+    static void Main_Solution1(string[] args)
     {
         var input = new int[] { 1, 3, 2, 4, 0, 77, 5, 122 };
         //var input = new int[] { 3, 5, 2};

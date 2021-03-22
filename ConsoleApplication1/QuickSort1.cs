@@ -45,7 +45,7 @@ namespace QuickSortDemo
                 }
             }
         }
-        static void Main1(string[] args)
+        static void Main(string[] args)
         {
             int[] arr = { 67, 12, 95, 56, 85, 1, 100, 23, 60, 9 };
             int n = 10, i;
@@ -61,6 +61,8 @@ namespace QuickSortDemo
             {
                 Console.Write(arr[i] + " ");
             }
+
+            Console.Read();
         }
     }
 }
