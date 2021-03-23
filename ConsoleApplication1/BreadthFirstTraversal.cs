@@ -122,7 +122,7 @@ namespace ConsoleApplication1
                 }
             }
 
-            static void Main1(string[] args)
+            static void Main_BreadthFirst(string[] args)
             {
                 BreadthFirstAlgorithm b = new BreadthFirstAlgorithm();
                 Employee root = b.BuildEmployeeGraph();

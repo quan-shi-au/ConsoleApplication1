@@ -58,6 +58,7 @@
     <Compile Include="HashTable1.cs" />
     <Compile Include="JoinDemonstration.cs" />
     <Compile Include="MaximizingXor.cs" />
+    <Compile Include="MergeSort1.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Operators.cs" />
     <Compile Include="PriorityQueue.cs" />
